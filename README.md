@@ -8,7 +8,7 @@ It will putthe browser in full screen, remove all the rest of the site but the i
 To use it, create a new bookmark in your browser (Chrome, Firefox, Safari...) and in the URL address field, copy / paste this:
 
 ```
-javascript:(function(){(function(url,callback){var%20head=document.getElementsByTagName('head')[0];var%20script=document.createElement('script');script.type='text/javascript';script.src=url+'%3F'+(new%20Date().getTime());script.onreadystatechange=callback%20||%20function(){};script.onload=script.onreadystatechange;head.appendChild(script);})('http://127.0.0.1:8000/scratchpad.js', function()(mangaReader()))})();
+javascript:(function(){(function(url,callback){var%20head=document.getElementsByTagName('head')[0];var%20script=document.createElement('script');script.type='text/javascript';script.src=url+'%3F'+(new%20Date().getTime());script.onreadystatechange=callback%20||%20function(){};script.onload=script.onreadystatechange;head.appendChild(script);})('https://raw.github.com/sametmax/manga-reader.js/master/bookmarklet.js', function()(mangaReader()))})();
 ```
 
 Now, go to the manga hosting web site, click on a manga you wish to read, and click on the bookmark.
