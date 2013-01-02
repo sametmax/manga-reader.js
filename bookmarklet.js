@@ -253,12 +253,6 @@ var addImageAndLink = function($image, link, $loading_gif) {
             downloadNextImage(next_page)
         }
 
-        log('Currently', $images.length, 'images')
-        if ($images.length > 50){
-            log('Too many images, removing one')
-            $images.first().remove()
-        }
-
 }
 
 
@@ -306,7 +300,7 @@ $biggest_image.one('click', function(e){
 
     $('#quit').live('click', function(e){
         e.preventDefault();
-        window.location.reload();
+        window.location.href = localStorage[manga];
     });
 
     $('#reset').live('click', function(e){
